@@ -31,7 +31,10 @@
 
       body {
         height: 100vh;
-        background: linear-gradient(45deg, #5cba8a, #d5e1dc); /* Màu xanh nhẹ */
+        /* Thay đổi nền bằng ảnh từ liên kết */
+        background-image: url('https://github.com/Thanhlearningcode/Myprofile/blob/main/11.jpg?raw=true');
+        background-size: cover; /* Đảm bảo ảnh phủ đầy */
+        background-position: center; /* Căn giữa ảnh */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -42,10 +45,7 @@
         height: 450px; /* Kích thước chiều cao */
         border-radius: 10px;
         text-align: center;
-        background-color: #242628; /* Màu nền mặc định */
-        background-image: url('https://github.com/Thanhlearningcode/Myprofile/blob/main/11.jpg?raw=true'); /* Ảnh nền */
-        background-size: cover; /* Đảm bảo ảnh phủ đầy */
-        background-position: center; /* Căn giữa ảnh */
+        background-color: rgba(36, 38, 40, 0.9); /* Thêm độ trong suốt cho card */
         overflow: hidden;
         margin: 0 30px;
       }

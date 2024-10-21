@@ -12,7 +12,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Nhúng CSS trực tiếp vào đây -->
     <style>
       :root {
         --pink-color: #f2726a;
@@ -20,6 +19,7 @@
         --youtube-color: #ff0000; /* Màu YouTube */
         --linkedin-color: #0077b5; /* Màu LinkedIn */
         --github-color: #333; /* Màu GitHub */
+        --card-background-color: rgba(36, 38, 40, 0.9); /* Màu thẻ card */
       }
 
       * {
@@ -31,8 +31,8 @@
 
       body {
         height: 100vh;
-        /* Thay đổi nền bằng ảnh từ liên kết */
-        background-image: url('https://github.com/Thanhlearningcode/Myprofile/blob/main/11.jpg?raw=true');
+        /* Sử dụng GIF làm nền */
+        background-image: url('https://example.com/your-gif-image.gif'); /* Thay thế bằng URL của GIF */
         background-size: cover; /* Đảm bảo ảnh phủ đầy */
         background-position: center; /* Căn giữa ảnh */
         display: flex;
@@ -45,7 +45,7 @@
         height: 450px; /* Kích thước chiều cao */
         border-radius: 10px;
         text-align: center;
-        background-color: rgba(36, 38, 40, 0.9); /* Thêm độ trong suốt cho card */
+        background-color: var(--card-background-color); /* Màu nền thẻ card */
         overflow: hidden;
         margin: 0 30px;
       }

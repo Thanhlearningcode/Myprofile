@@ -16,6 +16,9 @@
     <style>
       :root {
         --pink-color: #f2726a;
+        --facebook-color: #3b5998; /* Màu Facebook */
+        --youtube-color: #ff0000; /* Màu YouTube */
+        --linkedin-color: #0077b5; /* Màu LinkedIn */
       }
 
       * {
@@ -86,10 +89,24 @@
         display: inline-block;
         font-size: 18px;
         transition: 0.25s;
+        padding: 10px; /* Thêm padding để tạo không gian cho màu nền */
+        border-radius: 5px; /* Bo góc cho nút */
+      }
+
+      .card__social a.facebook {
+        background-color: var(--facebook-color); /* Màu Facebook */
+      }
+
+      .card__social a.youtube {
+        background-color: var(--youtube-color); /* Màu YouTube */
+      }
+
+      .card__social a.linkedin {
+        background-color: var(--linkedin-color); /* Màu LinkedIn */
       }
 
       .card__social a:hover {
-        color: var(--pink-color);
+        opacity: 0.8; /* Tăng độ mờ khi hover */
       }
 
       a.button {
@@ -118,17 +135,17 @@
       <h2>Nguyễn Văn Thành</h2>
       <p>Sinh viên Cơ Điện Tử DUT</p>
       <div class="card__social">
-        <a target="_blank" href="https://www.facebook.com/thanhizsmileboy/">
+        <a class="facebook" target="_blank" href="https://www.facebook.com/thanhizsmileboy/">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a target="_blank" href="https://www.youtube.com/@ThanhNguyenVan-wl1bj">
+        <a class="youtube" target="_blank" href="https://www.youtube.com/@ThanhNguyenVan-wl1bj">
           <i class="fab fa-youtube"></i>
         </a>
-        <a target="_blank" href="https://github.com/Thanhlearningcode">
+        <a class="github" target="_blank" href="https://github.com/Thanhlearningcode">
           <i class="fab fa-github"></i>
         </a>
-        <a target="_blank" href="https://www.linkedin.com/in/thành-nguyễn-văn-980679317/">
-          <i class="fab fa-linkedin-in"></i> <!-- Biểu tượng LinkedIn -->
+        <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/thành-nguyễn-văn-980679317/">
+          <i class="fab fa-linkedin-in"></i>
         </a>
       </div>
       <a href="mailto:thanhnguyen76bk@gmail.com" class="button">Contact me</a>
